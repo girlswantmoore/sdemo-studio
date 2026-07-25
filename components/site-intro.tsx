@@ -54,7 +54,7 @@ export function SiteIntro() {
         <MagicDust
           sequence={introSequence}
           particleCount={7000}
-          particleColor="#b9ff3d"
+          particleColor="#ffffff"
           particleSize={0.024}
           holdDuration={2}
           animationSpeed={1.35}
