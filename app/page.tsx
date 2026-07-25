@@ -1,3 +1,5 @@
+import { SiteIntro } from "../components/site-intro";
+
 const services = [
   {
     number: "01",
@@ -28,7 +30,9 @@ const steps = [
 
 export default function Home() {
   return (
-    <main id="top">
+    <>
+      <SiteIntro />
+      <main id="top">
       <nav className="nav shell" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="S. DeMo Studio home">
           <img src="/brand/monogram.png" alt="" />
@@ -193,6 +197,7 @@ export default function Home() {
         <p>UI/UX · Wix · Shopify · Custom builds</p>
         <p>© {new Date().getFullYear()} S. DeMo Studio</p>
       </footer>
-    </main>
+      </main>
+    </>
   );
 }
