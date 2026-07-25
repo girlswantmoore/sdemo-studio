@@ -1,5 +1,6 @@
 import { SiteIntro } from "../components/site-intro";
 import { ServiceParticleStage } from "../components/service-particle-stage";
+import { TiltCard } from "../components/ui/tilt-card";
 
 const services = [
   {
@@ -151,16 +152,25 @@ export default function Home() {
         <ServiceParticleStage />
         <div className="service-grid">
           {services.map((service) => (
-            <article className="service-card" key={service.title}>
-              <span className="service-number">{service.number}</span>
-              <h3>{service.title}</h3>
-              <p>{service.text}</p>
-              <ul aria-label={`${service.title} project types`}>
-                {service.tags.map((tag) => (
-                  <li key={tag}>{tag}</li>
-                ))}
-              </ul>
-            </article>
+            <TiltCard
+              className="service-card"
+              effect="gravitate"
+              key={service.title}
+              perspective={1100}
+              scale={1.025}
+              tiltLimit={6}
+            >
+              <article className="service-card-inner">
+                <span className="service-number">{service.number}</span>
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+                <ul aria-label={`${service.title} project types`}>
+                  {service.tags.map((tag) => (
+                    <li key={tag}>{tag}</li>
+                  ))}
+                </ul>
+              </article>
+            </TiltCard>
           ))}
         </div>
       </section>

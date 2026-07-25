@@ -594,7 +594,8 @@ h1 span {
   padding: 34px 30px;
   border-right: 1px solid var(--line);
   position: relative;
-  transition: background 180ms ease, transform 180ms ease;
+  transform-origin: center;
+  transition: background 180ms ease;
 }
 
 .service-card:first-child {
@@ -603,7 +604,16 @@ h1 span {
 
 .service-card:hover {
   background: var(--white);
-  transform: translateY(-6px);
+  z-index: 3;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.12);
+}
+
+.service-card-inner {
+  min-height: 100%;
+  position: relative;
+  z-index: 2;
+  transform: translateZ(28px);
+  transform-style: preserve-3d;
 }
 
 .service-number {
@@ -1082,6 +1092,10 @@ h1 span {
     min-height: 340px;
     border-left: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
+  }
+
+  .service-card-inner {
+    transform: none;
   }
 
   .service-number {
