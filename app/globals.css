@@ -925,6 +925,9 @@ h1 span {
   width: min(900px, calc(100% - 30px));
   margin: 0 auto;
   text-align: center;
+  animation: case-scroll-header linear both;
+  animation-timeline: view();
+  animation-range: entry 5% cover 72%;
 }
 
 .case-scroll-title h2 {
@@ -945,6 +948,34 @@ h1 span {
   background: #222222;
   transform-style: preserve-3d;
   transform-origin: center top;
+  box-shadow:
+    0 9px 20px #0000004a,
+    0 37px 37px #00000042,
+    0 84px 50px #00000026,
+    0 149px 60px #0000000a;
+  animation: case-scroll-card linear both;
+  animation-timeline: view();
+  animation-range: entry 5% cover 72%;
+}
+
+@keyframes case-scroll-header {
+  from {
+    transform: translateY(70px);
+  }
+
+  to {
+    transform: translateY(-70px);
+  }
+}
+
+@keyframes case-scroll-card {
+  from {
+    transform: perspective(1000px) rotateX(18deg) scale(1.04);
+  }
+
+  to {
+    transform: perspective(1000px) rotateX(0deg) scale(1);
+  }
 }
 
 .container-scroll-screen {
@@ -1721,6 +1752,17 @@ h1 span {
     padding: 7px;
     border-width: 2px;
     border-radius: 18px;
+    animation-name: case-scroll-card-mobile;
+  }
+
+  @keyframes case-scroll-card-mobile {
+    from {
+      transform: perspective(1000px) rotateX(18deg) scale(0.78);
+    }
+
+    to {
+      transform: perspective(1000px) rotateX(0deg) scale(0.94);
+    }
   }
 
   .container-scroll-screen {
@@ -1814,6 +1856,13 @@ h1 span {
   .services-fit-actions {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .container-scroll-header,
+  .container-scroll-card {
+    animation: none;
   }
 }
 
