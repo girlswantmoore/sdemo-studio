@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ContainerScroll } from "../../components/ui/container-scroll";
 
 export const metadata: Metadata = {
   title: "Yes Lord Case Study | S. DeMo Studio",
@@ -87,12 +88,19 @@ export default function WorkPage() {
         </div>
       </header>
 
-      <section className="case-cover shell">
+      <ContainerScroll
+        titleComponent={
+          <div className="case-scroll-title">
+            <p className="eyebrow">The first impression</p>
+            <h2>The brand arrives before the product grid.</h2>
+          </div>
+        }
+      >
         <img
           src="/work/yes-lord/home.png"
           alt="Yes Lord homepage with an editorial campaign image and oversized wordmark"
         />
-      </section>
+      </ContainerScroll>
 
       <section className="case-overview shell section" id="overview">
         <p className="eyebrow">The assignment</p>
