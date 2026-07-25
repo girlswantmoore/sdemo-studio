@@ -24,7 +24,7 @@ export interface MagicDustProps {
 }
 
 const DEFAULT_SEQUENCE: SequenceItem[] = [
-  { type: "text", text: "S. DEMO", offset: [0, 0, 0] },
+  { type: "text", text: "S. DeMo", offset: [0, 0, 0] },
 ];
 
 function getScatteredPositions(count: number, radius: number) {
@@ -98,10 +98,10 @@ function getTextPositions(
 
   for (let index = 0; index < count; index++) {
     const point = points[Math.floor(Math.random() * points.length)];
-    positions[index * 3] = point.x + (Math.random() - 0.5) * 0.15;
+    positions[index * 3] = point.x + (Math.random() - 0.5) * 0.08;
     positions[index * 3 + 1] =
-      point.y + (Math.random() - 0.5) * 0.15;
-    positions[index * 3 + 2] = (Math.random() - 0.5) * 0.2;
+      point.y + (Math.random() - 0.5) * 0.08;
+    positions[index * 3 + 2] = (Math.random() - 0.5) * 0.12;
   }
 
   return positions;

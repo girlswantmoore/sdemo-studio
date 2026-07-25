@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { MagicDust } from "./ui/magic-dust-shader";
 
 const introSequence = [
-  { type: "text" as const, text: "S. DEMO" },
+  { type: "text" as const, text: "S. DeMo" },
 ];
 
 export function SiteIntro() {
@@ -53,9 +53,9 @@ export function SiteIntro() {
       <div className="intro-canvas" aria-hidden="true">
         <MagicDust
           sequence={introSequence}
-          particleCount={7000}
+          particleCount={14000}
           particleColor="#ffffff"
-          particleSize={0.024}
+          particleSize={0.019}
           holdDuration={2}
           animationSpeed={1.35}
           scatterRadius={13}
