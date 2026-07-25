@@ -45,7 +45,7 @@ export default function Home() {
         </a>
         <div className="nav-links">
           <a href="/work">Work</a>
-          <a href="#services">Services</a>
+          <a href="/services">Services</a>
           <a href="#process">Process</a>
           <a href="#about">About</a>
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
             <a className="button" href="#contact">
               Let&apos;s work together <span aria-hidden="true">↗</span>
             </a>
-            <a className="text-link" href="#services">
+            <a className="text-link" href="/services">
               Explore services <span aria-hidden="true">↓</span>
             </a>
           </div>
