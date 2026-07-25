@@ -24,8 +24,8 @@ export function ServiceParticleStage() {
           particleCount={5500}
           particleColor="#ffffff"
           particleSize={0.022}
-          holdDuration={1.25}
-          animationSpeed={1.4}
+          holdDuration={0.65}
+          animationSpeed={2.2}
           scatterRadius={12}
         />
       </div>
