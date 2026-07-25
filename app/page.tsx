@@ -181,10 +181,15 @@ export default function Home() {
             from there.
           </p>
           <div className="contact-actions">
-            <a className="button button-light" href="#top">
+            <a
+              className="button button-light"
+              href="mailto:shane@sdemo.studio?subject=New%20S.%20DeMo%20Studio%20Project"
+            >
               Start the conversation <span aria-hidden="true">↗</span>
             </a>
-            <span>Contact link coming next</span>
+            <a className="email-link" href="mailto:shane@sdemo.studio">
+              shane@sdemo.studio
+            </a>
           </div>
         </div>
       </section>
