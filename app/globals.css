@@ -904,13 +904,13 @@ h1 span {
 
 .container-scroll {
   width: 100%;
-  min-height: 1120px;
+  min-height: 980px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: clip;
-  padding: 100px 24px 150px;
+  padding: 90px 24px 130px;
   background: #0a0a0a;
   color: white;
 }
@@ -938,14 +938,23 @@ h1 span {
   font-weight: 500;
 }
 
+.case-scroll-description {
+  max-width: 620px;
+  margin: 28px auto 0;
+  color: #a6a6a6;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
 .container-scroll-card {
-  width: min(1180px, calc(100% - 30px));
+  width: min(920px, calc(100% - 80px));
   aspect-ratio: 1.82;
   margin: 70px auto 0;
-  padding: 16px;
+  padding: 20px;
   border: 3px solid #666666;
-  border-radius: 30px;
+  border-radius: 34px;
   background: #222222;
+  position: relative;
   transform-style: preserve-3d;
   transform-origin: center top;
   box-shadow:
@@ -956,6 +965,19 @@ h1 span {
   animation: case-scroll-card linear both;
   animation-timeline: view();
   animation-range: entry 5% cover 72%;
+}
+
+.container-scroll-card::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 7px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #777777;
+  transform: translateX(-50%);
 }
 
 @keyframes case-scroll-header {
@@ -1734,7 +1756,7 @@ h1 span {
   }
 
   .container-scroll {
-    min-height: 780px;
+    min-height: 720px;
     padding: 75px 0 105px;
   }
 
@@ -1747,9 +1769,9 @@ h1 span {
   }
 
   .container-scroll-card {
-    width: calc(100% - 20px);
+    width: calc(100% - 44px);
     margin-top: 54px;
-    padding: 7px;
+    padding: 10px;
     border-width: 2px;
     border-radius: 18px;
     animation-name: case-scroll-card-mobile;

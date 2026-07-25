@@ -122,44 +122,43 @@ export default function WorkPage() {
         </div>
       </section>
 
-      <section className="case-dark" id="experience">
-        <div className="shell section">
-          <div className="case-section-heading">
-            <p className="eyebrow eyebrow-light">The experience</p>
-            <h2>Strong brand energy. Zero shopping friction.</h2>
-          </div>
-          <div className="screen-frame screen-shop">
-            <img
-              src="/work/yes-lord/shop.png"
-              alt="Yes Lord shop page showing a responsive product collection"
-            />
-          </div>
-          <div className="screen-caption">
-            <span>01 · Shop discovery</span>
-            <p>
-              A focused collection view balances campaign-style spacing with
-              clear products and promotional messaging.
-            </p>
-          </div>
-        </div>
-      </section>
+      <div id="experience">
+        <ContainerScroll
+          titleComponent={
+            <div className="case-scroll-title">
+              <p className="eyebrow eyebrow-light">01 · Shop discovery</p>
+              <h2>Strong brand energy. Zero shopping friction.</h2>
+              <p className="case-scroll-description">
+                A focused collection view balances campaign-style spacing with
+                clear products and promotional messaging.
+              </p>
+            </div>
+          }
+        >
+          <img
+            src="/work/yes-lord/shop.png"
+            alt="Yes Lord shop page showing a responsive product collection"
+          />
+        </ContainerScroll>
 
-      <section className="product-story shell section">
-        <div className="screen-frame screen-product">
+        <ContainerScroll
+          titleComponent={
+            <div className="case-scroll-title">
+              <p className="eyebrow eyebrow-light">02 · Product decisions</p>
+              <h2>Every choice stays clear and close at hand.</h2>
+              <p className="case-scroll-description">
+                Sale pricing, color swatches, sizing, and product imagery create
+                a direct path from interest to checkout.
+              </p>
+            </div>
+          }
+        >
           <img
             src="/work/yes-lord/product.png"
             alt="Yes Lord product page with sale pricing, color choices, and size selection"
           />
-        </div>
-        <div className="screen-caption">
-          <span>02 · Product decisions</span>
-          <p>
-            Sale pricing, color swatches, sizing, and product imagery are
-            organized into a clear decision path that keeps attention on the
-            item.
-          </p>
-        </div>
-      </section>
+        </ContainerScroll>
+      </div>
 
       <section className="capabilities" id="capabilities">
         <div className="shell section">
