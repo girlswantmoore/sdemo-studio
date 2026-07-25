@@ -43,9 +43,12 @@ export default function WorkPage() {
   return (
     <main className="case-study" id="top">
       <nav className="nav shell case-nav" aria-label="Portfolio navigation">
-        <a className="brand" href="/" aria-label="S. DeMo Studio home">
-          <img src="/brand/monogram.png" alt="" />
-          <span>S. DeMo Studio</span>
+        <a
+          className="wordmark-brand"
+          href="/"
+          aria-label="S. DeMo Studio home"
+        >
+          <img src="/brand/wordmark-nav.png" alt="S. DeMo Digital Design Studio" />
         </a>
         <div className="nav-links">
           <a href="#overview">Overview</a>

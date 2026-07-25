@@ -34,9 +34,12 @@ export default function Home() {
       <SiteIntro />
       <main id="top">
       <nav className="nav shell" aria-label="Main navigation">
-        <a className="brand" href="#top" aria-label="S. DeMo Studio home">
-          <img src="/brand/monogram.png" alt="" />
-          <span>S. DeMo Studio</span>
+        <a
+          className="wordmark-brand"
+          href="#top"
+          aria-label="S. DeMo Studio home"
+        >
+          <img src="/brand/wordmark-nav.png" alt="S. DeMo Digital Design Studio" />
         </a>
         <div className="nav-links">
           <a href="/work">Work</a>
