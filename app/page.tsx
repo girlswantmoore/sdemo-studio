@@ -1,4 +1,5 @@
 import { SiteIntro } from "../components/site-intro";
+import { ServiceParticleStage } from "../components/service-particle-stage";
 
 const services = [
   {
@@ -147,6 +148,7 @@ export default function Home() {
             project starts with clarity and ends with a site that feels like you.
           </p>
         </div>
+        <ServiceParticleStage />
         <div className="service-grid">
           {services.map((service) => (
             <article className="service-card" key={service.title}>
