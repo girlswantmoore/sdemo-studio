@@ -39,6 +39,7 @@ export default function Home() {
           <span>S. DeMo Studio</span>
         </a>
         <div className="nav-links">
+          <a href="/work">Work</a>
           <a href="#services">Services</a>
           <a href="#process">Process</a>
           <a href="#about">About</a>
@@ -96,6 +97,40 @@ export default function Home() {
             <em>make sense, feel natural,</em> and move people to act.
           </p>
         </div>
+      </section>
+
+      <section className="featured-work shell section" id="work">
+        <div className="section-heading work-heading">
+          <div>
+            <p className="eyebrow">Selected work · 01</p>
+            <h2>A storefront built to carry the brand.</h2>
+          </div>
+          <p>
+            A custom commerce experience for Yes Lord—uniting faith, fashion,
+            product storytelling, and a frictionless path to purchase.
+          </p>
+        </div>
+        <a
+          className="featured-project"
+          href="/work"
+          aria-label="View the Yes Lord case study"
+        >
+          <div className="featured-project-image">
+            <img
+              src="/work/yes-lord/home.png"
+              alt="Yes Lord custom storefront homepage"
+            />
+          </div>
+          <div className="featured-project-meta">
+            <div>
+              <span>Yes Lord</span>
+              <p>Custom e-commerce · UI/UX · Development</p>
+            </div>
+            <span className="project-arrow" aria-hidden="true">
+              ↗
+            </span>
+          </div>
+        </a>
       </section>
 
       <section className="services shell section" id="services">
