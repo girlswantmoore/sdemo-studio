@@ -464,6 +464,11 @@ h1 span {
   object-fit: cover;
 }
 
+.modus-video-crop {
+  transform: scale(1.38) translateY(-7%);
+  transform-origin: center center;
+}
+
 .featured-project-image-modus {
   background: #063f39;
 }

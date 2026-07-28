@@ -93,6 +93,7 @@ export default function ModusWorkPage() {
         }
       >
         <video
+          className="modus-video-crop"
           autoPlay
           loop
           muted

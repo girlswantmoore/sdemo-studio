@@ -147,6 +147,7 @@ export default function Home() {
         >
           <div className="featured-project-image featured-project-image-modus">
             <video
+              className="modus-video-crop"
               autoPlay
               loop
               muted
