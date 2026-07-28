@@ -12,6 +12,7 @@ const serviceSequence: SequenceItem[] = [
 export function ServiceParticleStage() {
   const stageRef = useRef<HTMLDivElement>(null);
   const [isActive, setIsActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     const stage = stageRef.current;
@@ -30,6 +31,16 @@ export function ServiceParticleStage() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (!isActive) return;
+
+    const cycle = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % serviceSequence.length);
+    }, 3500);
+
+    return () => window.clearInterval(cycle);
+  }, [isActive]);
+
   return (
     <div className="service-particle-stage" ref={stageRef}>
       <div className="service-particle-meta" aria-hidden="true">
@@ -39,12 +50,13 @@ export function ServiceParticleStage() {
       <div className="service-particle-canvas" aria-hidden="true">
         {isActive && (
           <MagicDust
-            sequence={serviceSequence}
+            key={activeIndex}
+            sequence={[serviceSequence[activeIndex]]}
             particleCount={5500}
             particleColor="#ffffff"
             particleSize={0.022}
-            holdDuration={0.65}
-            animationSpeed={2.2}
+            holdDuration={1.1}
+            animationSpeed={3.6}
             scatterRadius={12}
           />
         )}
