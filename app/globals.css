@@ -93,7 +93,7 @@ body.intro-active {
   letter-spacing: 0.28em;
   font-size: 9px;
   font-weight: 700;
-  animation: intro-copy-in 900ms 3.8s both;
+  animation: intro-copy-in 650ms 1.85s both;
 }
 
 .intro-skip {
@@ -135,7 +135,7 @@ body.intro-active {
   height: 100%;
   background: var(--accent);
   transform-origin: left;
-  animation: intro-progress 5.6s linear both;
+  animation: intro-progress 2.8s linear both;
 }
 
 @keyframes intro-progress {

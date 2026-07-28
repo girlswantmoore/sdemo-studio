@@ -8,22 +8,24 @@ const introSequence = [
 ];
 
 export function SiteIntro() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
+    const introSeen = window.sessionStorage.getItem("sdemo-intro-seen");
     const reduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
 
-    if (reduceMotion) {
-      setVisible(false);
+    if (introSeen || reduceMotion) {
       return;
     }
 
+    window.sessionStorage.setItem("sdemo-intro-seen", "true");
+    setVisible(true);
     document.body.classList.add("intro-active");
-    const leaveTimer = window.setTimeout(() => setLeaving(true), 4300);
-    const removeTimer = window.setTimeout(() => setVisible(false), 5000);
+    const leaveTimer = window.setTimeout(() => setLeaving(true), 2800);
+    const removeTimer = window.setTimeout(() => setVisible(false), 3500);
 
     return () => {
       window.clearTimeout(leaveTimer);
@@ -56,8 +58,8 @@ export function SiteIntro() {
           particleCount={14000}
           particleColor="#ffffff"
           particleSize={0.019}
-          holdDuration={1.35}
-          animationSpeed={1.65}
+          holdDuration={0.85}
+          animationSpeed={2}
           scatterRadius={13}
         />
       </div>
