@@ -3,12 +3,9 @@
 import { MagicDust, type SequenceItem } from "./ui/magic-dust-shader";
 
 const serviceSequence: SequenceItem[] = [
-  { type: "text", text: "WIX" },
-  { type: "shape", shape: "torus" },
-  { type: "text", text: "SHOPIFY" },
-  { type: "shape", shape: "sphere" },
   { type: "text", text: "CUSTOM" },
-  { type: "shape", shape: "box" },
+  { type: "text", text: "SHOPIFY" },
+  { type: "text", text: "WIX" },
 ];
 
 export function ServiceParticleStage() {
@@ -30,11 +27,11 @@ export function ServiceParticleStage() {
         />
       </div>
       <div className="service-particle-static" aria-hidden="true">
-        <span>Wix</span>
+        <span>Custom</span>
         <i />
         <span>Shopify</span>
         <i />
-        <span>Custom</span>
+        <span>Wix</span>
       </div>
       <p>One studio. Three ways to build.</p>
     </div>
