@@ -62,7 +62,7 @@ export default function WorkPage() {
           target="_blank"
           rel="noreferrer"
         >
-          Visit live site ↗
+          Visit live site ↗︎
         </a>
       </nav>
 
@@ -83,7 +83,7 @@ export default function WorkPage() {
             target="_blank"
             rel="noreferrer"
           >
-            yeslord.shop <span aria-hidden="true">↗</span>
+            yeslord.shop <span aria-hidden="true">↗︎</span>
           </a>
         </div>
       </header>
@@ -193,7 +193,7 @@ export default function WorkPage() {
               className="button button-light"
               href="mailto:shane@sdemo.studio?subject=New%20S.%20DeMo%20Studio%20Project"
             >
-              Start a conversation <span aria-hidden="true">↗</span>
+              Start a conversation <span aria-hidden="true">↗︎</span>
             </a>
             <a className="email-link" href="mailto:shane@sdemo.studio">
               shane@sdemo.studio
@@ -208,7 +208,7 @@ export default function WorkPage() {
           <span>S. DeMo Studio</span>
         </a>
         <p>Yes Lord · Custom e-commerce</p>
-        <a href="#top">Back to top ↑</a>
+        <a href="#top">Back to top ↑︎</a>
       </footer>
     </main>
   );

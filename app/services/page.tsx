@@ -134,7 +134,7 @@ export default function ServicesPage() {
             outcome—not a one-size-fits-all checklist.
           </p>
           <a className="text-link dark" href="#packages">
-            Explore the options <span aria-hidden="true">↓</span>
+            Explore the options <span aria-hidden="true">↓︎</span>
           </a>
         </div>
       </header>
@@ -180,7 +180,7 @@ export default function ServicesPage() {
                   )}
                 >
                   Ask about {servicePackage.name}{" "}
-                  <span aria-hidden="true">↗</span>
+                  <span aria-hidden="true">↗︎</span>
                 </a>
               </article>
             ))}
@@ -209,7 +209,7 @@ export default function ServicesPage() {
                 href={inquiryHref(`${title} inquiry`)}
                 aria-label={`Ask about ${title}`}
               >
-                ↗
+                ↗︎
               </a>
             </article>
           ))}
@@ -242,7 +242,7 @@ export default function ServicesPage() {
                     href={inquiryHref(`${option.title} inquiry`)}
                     aria-label={`Ask about ${option.title}`}
                   >
-                    ↗
+                    ↗︎
                   </a>
                 </div>
               </article>
@@ -264,7 +264,7 @@ export default function ServicesPage() {
               className="button"
               href={inquiryHref("Help choosing an S. DeMo Studio service")}
             >
-              Find the right service <span aria-hidden="true">↗</span>
+              Find the right service <span aria-hidden="true">↗︎</span>
             </a>
             <a className="email-link dark-email" href="mailto:shane@sdemo.studio">
               shane@sdemo.studio
@@ -279,7 +279,7 @@ export default function ServicesPage() {
           <span>S. DeMo Studio</span>
         </a>
         <p>Packages · Individual services · Consulting</p>
-        <a href="#top">Back to top ↑</a>
+        <a href="#top">Back to top ↑︎</a>
       </footer>
     </main>
   );

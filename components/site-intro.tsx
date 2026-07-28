@@ -22,8 +22,8 @@ export function SiteIntro() {
     }
 
     document.body.classList.add("intro-active");
-    const leaveTimer = window.setTimeout(() => setLeaving(true), 5600);
-    const removeTimer = window.setTimeout(() => setVisible(false), 6350);
+    const leaveTimer = window.setTimeout(() => setLeaving(true), 4300);
+    const removeTimer = window.setTimeout(() => setVisible(false), 5000);
 
     return () => {
       window.clearTimeout(leaveTimer);
@@ -56,8 +56,8 @@ export function SiteIntro() {
           particleCount={14000}
           particleColor="#ffffff"
           particleSize={0.019}
-          holdDuration={2}
-          animationSpeed={1.35}
+          holdDuration={1.35}
+          animationSpeed={1.65}
           scatterRadius={13}
         />
       </div>
@@ -67,7 +67,7 @@ export function SiteIntro() {
       </div>
       <p className="intro-subtitle">Web design · UI/UX</p>
       <button className="intro-skip" type="button" onClick={dismiss}>
-        Skip intro <span aria-hidden="true">↗</span>
+        Skip intro <span aria-hidden="true">↗︎</span>
       </button>
       <div className="intro-progress" aria-hidden="true">
         <span />

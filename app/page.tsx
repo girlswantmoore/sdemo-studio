@@ -68,10 +68,10 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button" href="#contact">
-              Let&apos;s work together <span aria-hidden="true">↗</span>
+              Let&apos;s work together <span aria-hidden="true">↗︎</span>
             </a>
             <a className="text-link" href="/services">
-              Explore services <span aria-hidden="true">↓</span>
+              Explore services <span aria-hidden="true">↓︎</span>
             </a>
           </div>
         </div>
@@ -132,7 +132,38 @@ export default function Home() {
               <p>Custom e-commerce · UI/UX · Development</p>
             </div>
             <span className="project-arrow" aria-hidden="true">
-              ↗
+              ↗︎
+            </span>
+          </div>
+        </a>
+        <div className="work-divider">
+          <p className="eyebrow">Selected work · 02</p>
+          <p>Strategy-led consulting · Custom website</p>
+        </div>
+        <a
+          className="featured-project"
+          href="/work/modus"
+          aria-label="View the Modus Strategic Management case study"
+        >
+          <div className="featured-project-image featured-project-image-modus">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster="/work/modus/home.png"
+              aria-label="A walkthrough of the Modus Strategic Management website"
+            >
+              <source src="/work/modus/walkthrough.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="featured-project-meta">
+            <div>
+              <span>Modus Strategic Management</span>
+              <p>Consulting · Strategy · Custom web design</p>
+            </div>
+            <span className="project-arrow" aria-hidden="true">
+              ↗︎
             </span>
           </div>
         </a>
@@ -217,7 +248,7 @@ export default function Home() {
             experience that feels considered, confident, and entirely your own.
           </p>
           <a className="text-link dark" href="#contact">
-            Tell me about your idea <span aria-hidden="true">↗</span>
+            Tell me about your idea <span aria-hidden="true">↗︎</span>
           </a>
         </div>
       </section>
@@ -235,7 +266,7 @@ export default function Home() {
               className="button button-light"
               href="mailto:shane@sdemo.studio?subject=New%20S.%20DeMo%20Studio%20Project"
             >
-              Start the conversation <span aria-hidden="true">↗</span>
+              Start the conversation <span aria-hidden="true">↗︎</span>
             </a>
             <a className="email-link" href="mailto:shane@sdemo.studio">
               shane@sdemo.studio
