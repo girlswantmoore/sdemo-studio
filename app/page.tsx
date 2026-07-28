@@ -117,7 +117,7 @@ export default function Home() {
         </div>
         <a
           className="featured-project"
-          href="/work"
+          href="/work/yes-lord"
           aria-label="View the Yes Lord case study"
         >
           <div className="featured-project-image">
