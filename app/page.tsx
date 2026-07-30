@@ -146,22 +146,40 @@ export default function Home() {
           aria-label="View the Modus Strategic Management case study"
         >
           <div className="featured-project-image featured-project-image-modus">
-            <video
-              className="modus-video-crop"
-              autoPlay
-              loop
-              muted
-              playsInline
-              poster="/work/modus/home.png"
-              aria-label="A walkthrough of the Modus Strategic Management website"
-            >
-              <source src="/work/modus/walkthrough.mp4" type="video/mp4" />
-            </video>
+            <img
+              src="/work/modus/home.png"
+              alt="Modus Strategic Management consulting homepage"
+            />
           </div>
           <div className="featured-project-meta">
             <div>
               <span>Modus Strategic Management</span>
               <p>Consulting · Strategy · Custom web design</p>
+            </div>
+            <span className="project-arrow" aria-hidden="true">
+              ↗︎
+            </span>
+          </div>
+        </a>
+        <div className="work-divider">
+          <p className="eyebrow">Selected work · 03</p>
+          <p>Local services · Lead generation website</p>
+        </div>
+        <a
+          className="featured-project"
+          href="/work/waterboy"
+          aria-label="View the WaterBoy Landscaping case study"
+        >
+          <div className="featured-project-image featured-project-image-waterboy">
+            <img
+              src="/work/waterboy/home.jpg"
+              alt="WaterBoy Landscaping homepage featuring a residential lawn"
+            />
+          </div>
+          <div className="featured-project-meta">
+            <div>
+              <span>WaterBoy Landscaping</span>
+              <p>Lawn care · Service design · Lead generation</p>
             </div>
             <span className="project-arrow" aria-hidden="true">
               ↗︎

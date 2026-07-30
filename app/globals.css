@@ -468,6 +468,10 @@ h1 span {
   background: #063f39;
 }
 
+.featured-project-image-waterboy {
+  background: #173b20;
+}
+
 .work-divider {
   display: flex;
   align-items: center;
@@ -587,6 +591,14 @@ h1 span {
 
 .work-choice-green {
   background: #063f39;
+}
+
+.work-choice-lime {
+  background: #173b20;
+}
+
+.work-choice-grid > .work-choice:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 .work-choice-top {
@@ -1760,6 +1772,10 @@ h1 span {
 
   .work-choice-grid {
     grid-template-columns: 1fr;
+  }
+
+  .work-choice-grid > .work-choice:last-child:nth-child(odd) {
+    grid-column: auto;
   }
 }
 

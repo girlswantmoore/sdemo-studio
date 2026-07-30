@@ -29,6 +29,17 @@ const projects = [
     imageAlt: "Modus Strategic Management consulting homepage",
     tone: "green",
   },
+  {
+    number: "03",
+    name: "WaterBoy",
+    type: "Lawn care · Service design · Lead generation",
+    description:
+      "A high-energy lawn care website built to establish local trust, explain services clearly, and turn property owners into qualified estimate requests.",
+    href: "/work/waterboy",
+    image: "/work/waterboy/home.jpg",
+    imageAlt: "WaterBoy Landscaping homepage featuring a residential lawn",
+    tone: "lime",
+  },
 ];
 
 export default function WorkIndexPage() {
