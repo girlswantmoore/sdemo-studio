@@ -48,6 +48,7 @@ export default function ModusWorkPage() {
           <img src="/brand/wordmark-nav.png" alt="S. DeMo Digital Design Studio" />
         </a>
         <div className="nav-links">
+          <a className="case-work-nav" href="/work">Work</a>
           <a href="#overview">Overview</a>
           <a href="#experience">Experience</a>
           <a href="#capabilities">Capabilities</a>
@@ -92,17 +93,11 @@ export default function ModusWorkPage() {
           </div>
         }
       >
-        <video
-          className="modus-video-crop"
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster="/work/modus/home.png"
-          aria-label="A walkthrough of the Modus Strategic Management website"
-        >
-          <source src="/work/modus/walkthrough.mp4" type="video/mp4" />
-        </video>
+        <img
+          className="tablet-crop-top"
+          src="/work/modus/home.png"
+          alt="Modus Strategic Management homepage with an emerald background and editorial headline"
+        />
       </ContainerScroll>
 
       <section className="case-overview shell section" id="overview">
@@ -128,25 +123,26 @@ export default function ModusWorkPage() {
         <ContainerScroll
           titleComponent={
             <div className="case-scroll-title">
-              <p className="eyebrow eyebrow-light">01 · Positioning</p>
-              <h2>A first impression grounded in clarity.</h2>
+              <p className="eyebrow eyebrow-light">02 · About</p>
+              <h2>Expertise explained with confidence and clarity.</h2>
               <p className="case-scroll-description">
-                The opening message leads with the outcome clients want, while
-                the visual system communicates calm expertise.
+                The company story establishes Modus&apos;s experience across
+                health data, technology, community outcomes, and strategy.
               </p>
             </div>
           }
         >
           <img
-            src="/work/modus/home.png"
-            alt="Modus Strategic Management homepage with an emerald background and editorial headline"
+            className="tablet-crop-top"
+            src="/work/modus/about.png"
+            alt="Modus Strategic Management about page describing its health data and strategy expertise"
           />
         </ContainerScroll>
 
         <ContainerScroll
           titleComponent={
             <div className="case-scroll-title">
-              <p className="eyebrow eyebrow-light">02 · Conversion</p>
+              <p className="eyebrow eyebrow-light">03 · Contact</p>
               <h2>A consultation path built around useful context.</h2>
               <p className="case-scroll-description">
                 A tailored inquiry experience helps Modus understand the
@@ -156,6 +152,7 @@ export default function ModusWorkPage() {
           }
         >
           <img
+            className="tablet-crop-top"
             src="/work/modus/contact.png"
             alt="Modus consultation form with organization and project detail fields"
           />

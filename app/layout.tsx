@@ -31,10 +31,10 @@ export async function generateMetadata(): Promise<Metadata> {
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "any" },
-        { url: "/icon.png?v=2", type: "image/png", sizes: "192x192" },
+        { url: "/icon.png?v=3", type: "image/png", sizes: "192x192" },
       ],
       shortcut: "/favicon.ico",
-      apple: "/icon.png?v=2",
+      apple: "/icon.png?v=3",
     },
     openGraph: {
       title,

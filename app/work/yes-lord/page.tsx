@@ -52,6 +52,7 @@ export default function WorkPage() {
           <img src="/brand/wordmark-nav.png" alt="S. DeMo Digital Design Studio" />
         </a>
         <div className="nav-links">
+          <a className="case-work-nav" href="/work">Work</a>
           <a href="#overview">Overview</a>
           <a href="#experience">Experience</a>
           <a href="#capabilities">Capabilities</a>

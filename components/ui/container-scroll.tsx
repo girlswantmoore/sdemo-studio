@@ -10,7 +10,7 @@ export function ContainerScroll({
   return (
     <section
       className="container-scroll"
-      aria-label="Yes Lord homepage presentation"
+      aria-label="Website presentation"
     >
       <div className="container-scroll-perspective">
         <div className="container-scroll-header">{titleComponent}</div>

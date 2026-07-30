@@ -1170,6 +1170,10 @@ h1 span {
   object-fit: cover;
 }
 
+.container-scroll-screen img.tablet-crop-top {
+  object-position: top center;
+}
+
 .container-scroll-screen video {
   display: block;
   width: 100%;
@@ -1623,6 +1627,20 @@ h1 span {
   }
 
   .nav-links {
+    display: none;
+  }
+
+  .case-nav {
+    grid-template-columns: 1fr auto auto;
+    gap: 14px;
+  }
+
+  .case-nav .nav-links {
+    display: flex;
+    gap: 0;
+  }
+
+  .case-nav .nav-links a:not(.case-work-nav) {
     display: none;
   }
 
